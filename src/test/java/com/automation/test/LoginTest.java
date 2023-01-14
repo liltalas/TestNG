@@ -4,7 +4,7 @@ import org.testng.annotations.*;
 
 public class LoginTest extends BaseTest {
 
-    @Test
+    @Test(groups = "Smoke")
 
     public void verifyLoginSuccessful(){
         System.out.println("Open Website");
