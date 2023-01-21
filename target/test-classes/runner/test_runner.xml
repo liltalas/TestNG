@@ -2,11 +2,11 @@
 
 <suite name="Smoke Automation Test " verbose="1" parallel="methods">
 
-<!--    <groups>-->
-<!--        <run>-->
-<!--            <include name="KO"/>-->
-<!--        </run>-->
-<!--    </groups>-->
+    <groups>
+        <run>
+            <include name="KO"/>
+        </run>
+    </groups>
     <test name = "This is my Test">
 
         <packages>

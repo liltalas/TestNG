@@ -6,14 +6,15 @@ public class CartPageTest extends BaseTest {
     @Test
     public void verifyUserCanRemoveItemFromCart(){
         System.out.println("Test - Verify user can remove item from cart");
+        throw new RuntimeException("Test Failed!");
     }
 
-    @Test(groups = "KO")
+    @Test(dependsOnMethods = "verifyUserCanRemoveItemFromCart")
     public void verifyUserCanAddItemIntoCart(){
         System.out.println("Test - Verify user can add item into cart");
     }
 
-    @Test
+    @Test(dependsOnMethods = "verifyUserCanAddItemIntoCart")
     public void verifyUserCanChangeQuantityOfItemOnCart(){
         System.out.println("Test - Verify user can change quantity ");
     }
