@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke Automation Test " verbose="1" >
+    <test name="Login Test" >
+        <groups>
+            <run>
+                <include name = "Smoke" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.automation.test.LoginTest" /> <!--need to put /> if we don't want any methods inside the class -->
+<!--                 <methods>-->
+<!--                        <exclude name="secondTest"/>-->
+<!--                 </methods>-->
+<!--            </class>-->
+        </classes>
+    </test>
+
+    <!--Module Product Listing Page -->
+    <test name="Product Listing Page Test">
+        <groups>
+            <run>
+                <include name = "Smoke" />
+            </run>
+        </groups>
+        <classes>
+            <class name="com.automation.test.ProductListingPageTest"/>
+        </classes>
+
+<!--        <packages>-->
+<!--            <package name="com.automation.test" /> need to use either class or packages-->
+<!--        </packages>-->
+    </test>
+</suite>
+
+<!-- suite - collection of tests-->

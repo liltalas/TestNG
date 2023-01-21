@@ -8,7 +8,7 @@ public class CartPageTest extends BaseTest {
         System.out.println("Test - Verify user can remove item from cart");
     }
 
-    @Test
+    @Test(groups = "KO")
     public void verifyUserCanAddItemIntoCart(){
         System.out.println("Test - Verify user can add item into cart");
     }

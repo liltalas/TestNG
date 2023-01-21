@@ -2,7 +2,7 @@ package com.automation.test;
 
 import org.testng.annotations.Test;
 
-public class OrderCancellationOrderTest {
+public class OrderCancellationOrderTest extends BaseTest{
     @Test
     public void verifyUserCanCancelOrder(){
         System.out.println("Test - verify user can cancel the order");
